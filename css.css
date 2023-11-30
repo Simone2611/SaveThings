@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+:root {
+  --azzurrochiaro: 222, 83%, 98%;
+  --blu: 230, 54%, 27%;
+  --bluchiaro: 249, 100%, 51%;
+  --grigioblu: 236, 19%, 52%;
+  --verde: 164, 77%, 55%;
+  --rosso: 350, 75%, 50%;
+  --azzurro: 198, 100%, 68%;
+  --opacity: 0.5;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: var(--azzurrochiaro);
+  font-family: Ubuntu;
+  font-weight: 400;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  color: hsl(var(--blu));
+  font-weight: 600;
+}
+
+h2 {
+  color: hsl(var(--grigioblu));
+  font-weight: 500;
+}
+
+.btn {
+  border: none;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 7px;
+  font-weight: 600;
+}
+
+.primario {
+  background-color: hsl(var(--bluchiaro));
+}
+
+.primario:hover {
+  background-color: transparent;
+  outline: hsl(var(--bluchiaro)) 2px solid;
+  color: hsl(var(--bluchiaro));
+}
+
+.secondario {
+  background-color: hsl(var(--grigioblu));
+}
+
+.secondario:hover {
+  background-color: transparent;
+  outline: hsl(var(--grigioblu)) 2px solid;
+  color: hsl(var(--grigioblu));
+}
+
+.terziario {
+  background-color: hsl(var(--rosso));
+}
+
+.terziario:hover {
+  background-color: transparent;
+  outline: hsl(var(--rosso)) 2px solid;
+  color: hsl(var(--rosso));
+}
+
+.rettangolo {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 7px;
+}
