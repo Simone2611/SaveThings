@@ -3,12 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Crea</title>
   </head>
   <link rel="stylesheet" href="global.css" />
   <link rel="stylesheet" href="css.css" />
-  <script src="mainload.js" defer></script>
-
+  <script src="js.js" defer></script>
   <body>
     <div class="megacontainer">
       <div class="rettangolo barralaterale">
@@ -62,8 +61,8 @@
       <div class="centro">
         <div class="partesopra">
           <div class="dashboardtext">
-            <h4>Home / Dashboard</h4>
-            <h1>Main Dashboard</h1>
+            <h4>Home / Crea</h4>
+            <h1>Crea</h1>
           </div>
           <div class="rettangolo account">
             <div class="input">
@@ -79,7 +78,7 @@
                   d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
                 />
               </svg>
-              <input placeholder="search" class="inputIn" id="searchIn" />
+              <input placeholder="search" class="inputIn" />
             </div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -116,16 +115,40 @@
             </svg>
           </div>
         </div>
-        <div class="rettangolo recenti">
-          <h1>Recenti</h1>
-          <!-- js -->
-          <div id="contenitore" class="containerrecenti">
-            <!-- <div class="containerinfo">
-              <img src="" class="img" />
-              <h3>asdasd</h3>
-              <h3>10:20 Am</h3>
-              <h3>+ 100</h3>
-            </div> -->
+        <div class="rettangolo crea">
+          <div class="titolocrea">
+            <div>
+              <h1>Crea</h1>
+              <h3>Preview</h3>
+            </div>
+            <button class="btn primario creabtn" onclick="crea()">Crea</button>
+          </div>
+          <div class="containerrecenti">
+            <div class="containerinfo">
+              <div class="imgcontainer">
+                <div class="containerinfo">
+                  <h3 id="desc"></h3>
+                  <h3 id="ora"></h3>
+                  <h3 id="quant"></h3>
+                </div>
+                <div class="containerinfo">
+                  <input
+                    class="inputimg"
+                    placeholder="Descrizione"
+                    id="inDescPre"
+                  />
+                  <input class="inputimg" placeholder="Ora" id="inOra" />
+                  <input
+                    class="inputimg"
+                    placeholder="Quantitá"
+                    id="inQuantPre"
+                    type="number"
+                  />
+                  <button class="btn terziario" onclick="negativo()">-</button>
+                  <button class="btn verde" onclick="positivo()">+</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
